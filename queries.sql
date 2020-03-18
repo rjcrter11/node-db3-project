@@ -26,7 +26,7 @@ order by p.ProductName
 
 -- Display the OrderID, Customer's Company Name and the employee's LastName for every order. All columns should be labeled clearly. Displays 16,789 records.
 
-select o.Id OrderID, c.CompanyName as Buyer, e.LastName as Employee
+select o.Id OrderID, c.CompanyName as Buyer, e.LastName as EmployeeSales
 from [order] as o 
 join Customer as c on 
     o.CustomerId = c.Id
